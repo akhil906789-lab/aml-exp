@@ -1,0 +1,36 @@
+:root{
+  --navy:#0b3866; --navy-dark:#000066; --ink:#1c2430; --muted:#5b6675;
+  --line:#d9dfe7; --bg:#f4f6f9; --card:#fff;
+  --spam:#b42318; --spam-bg:#fdecea; --ok:#146c43; --ok-bg:#e7f6ee;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+.topbar{background:var(--navy);color:#fff;padding:26px 0 22px;border-bottom:6px solid var(--navy-dark)}
+.topbar h1{margin:0 0 4px;font-family:"Times New Roman",Georgia,serif;font-size:2rem}
+.topbar p{margin:0;opacity:.9}
+main{padding-top:24px;padding-bottom:8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:22px;margin-bottom:20px}
+label{display:block;font-weight:600;margin-bottom:8px}
+textarea{width:100%;padding:12px;font:inherit;border:1px solid #b9c2ce;border-radius:6px;resize:vertical}
+textarea:focus,.btn:focus-visible{outline:3px solid #9cc0ea;outline-offset:1px}
+.actions{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.btn{font:inherit;padding:10px 20px;border-radius:6px;border:1px solid #b9c2ce;background:#fff;color:var(--ink);cursor:pointer}
+.btn.primary{background:var(--navy);border-color:var(--navy);color:#fff}
+.btn.primary:hover{background:var(--navy-dark)}
+.btn:disabled{opacity:.6;cursor:wait}
+.result{margin-top:18px;padding:16px 18px;border-radius:6px;border-left:6px solid}
+.result .verdict{font-size:1.5rem;font-weight:700;margin:0}
+.result .detail{margin:4px 0 0;color:var(--muted)}
+.result.spam{background:var(--spam-bg);border-color:var(--spam);color:var(--spam)}
+.result.ok{background:var(--ok-bg);border-color:var(--ok);color:var(--ok)}
+.result.err{background:#fff7e0;border-color:#b7791f;color:#7a4b0a}
+.result .detail{color:var(--ink)}
+.notice.error{background:var(--spam-bg);color:var(--spam);padding:12px 16px;border-radius:6px;margin-bottom:16px}
+.how h2{margin:0 0 8px;font-size:1.15rem;color:var(--navy)}
+.how ol{padding-left:20px;margin:0 0 12px}
+code{background:#eef2f7;padding:1px 6px;border-radius:4px}
+.hint{margin:0;color:var(--muted)}
+.hint a{color:var(--navy)}
+.foot{color:var(--muted);font-size:.85rem;padding-bottom:28px}
+@media (max-width:520px){.topbar h1{font-size:1.6rem}.btn{flex:1}}
